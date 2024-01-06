@@ -1,4 +1,4 @@
-# Regression: Canadian Oil and Gas Stock Prediction using Company Balance Sheets
+# Regression: Canadian Oil and Gas Stock Price Prediction using Company Balance Sheets
 
 ### Introduction
 
