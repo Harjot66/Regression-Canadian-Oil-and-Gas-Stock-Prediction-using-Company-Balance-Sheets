@@ -88,7 +88,11 @@ Stock Ticker
 
 ### Results
 
+In summarizing the project, we encountered challenges in constructing a robust regression model. These challenges included a scarcity of strong variable predictors and difficulties in meeting various regression model assumptions, both before and after applying a Box-Cox transformation. Notably, our findings indicate that company balance sheets lack efficacy as predictors for the closing stock prices of Canadian oil and gas companies. This limitation arises from the fact that most balance sheet values exhibit an insignificant relationship with the closing stock price. Additionally, those few balance sheet values that do demonstrate a significant relationship fail to satisfy fundamental regression requirements such as the equal variance and normality of residuals assumptions, rendering the model unsuitable for predictive purposes. These insights underscore the importance of exploring factors beyond financial statement values when evaluating potential investments in the oil and gas sector. Investors are encouraged to delve deeper into a company's mission statement, social media activity, management history, and other non-financial aspects to make more informed investing decisions.
+
 ### Conclusion
+
+In conclusion, it appears that balance sheets may not be a reliable predictor for the closing stock prices of Canadian oil and gas companies. This is likely due to the influence of extraneous factors beyond the numerical values presented in financial statements that significantly impact the closing stock prices.
 
 ### References
 
