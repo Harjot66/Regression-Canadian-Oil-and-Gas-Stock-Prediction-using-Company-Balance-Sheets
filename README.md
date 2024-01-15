@@ -2,89 +2,103 @@
 
 ### Introduction
 
-In this project we want to create a stock price prediction model using company balance sheet values for various Canadian oil and gas companies. We will be using the Python Yahoo Finance API to get the data, then we would be utilizing Python for data wrangling and cleaning, then we would switch into R, where we would go ahead and attempt to create a powerful regression model to predict the stock price off of a given oil and gas company's balance sheet values. From my accounting knowledge, it was decided that utilizing a balance sheet for stock price prediction would make the most sense as this is the one company financial statement which provides a snapshot in time, whereas other financial statements provide values over a certain period of time. This regression model would then be able to be used for a strategy of value investing within the oil and gas industry.
+In this project we want to create a stock price prediction model using company balance sheet values for various Canadian oil and gas companies. We will be using the Financial Modelling Prep (Financial Modelling Prep, 2024) and Python Yahoo Finance (Yfinance PyPI., 2023) API's to gather the data, then we would be utilizing Python for data wrangling and cleaning, then we would switch into R, where we would go ahead and attempt to create a robust regression model to predict the stock price off of a given oil and gas company's balance sheet values. From my accounting knowledge, it was decided that utilizing a balance sheet for stock price prediction would make the most sense as this is the one company financial statement which provides a snapshot in time, whereas other financial statements provide values over a certain period of time. This regression model would then be able to be used as a strategy of value investing within the Canadian oil and gas industry.
 
 Value Investing: An investment strategy based on looking for stocks which are undervalued by the market at large.
 
 ### Dataset:
 
-Date
+date
 
-Ordinary Shares Number
+cashAndCashEquivalents
 
-Share Issued
+shortTermInvestments
 
-Net Debt
+cashAndShortTermInvestments
 
-Total Debt
+netReceivables
 
-Tangible Book Value
+inventory
 
-Invested Capital
+otherCurrentAssets
 
-Working Capital
+totalCurrentAssets
 
-Net Tangible Assets
+propertyPlantEquipmentNet
 
-Common Stock Equity
+goodwill
 
-Total Capitalization
+intangibleAssets
 
-Total Equity Gross Minority Interest
+goodwillAndIntangibleAssets
 
-Stockholders Equity
+longTermInvestments
 
-Capital Stock
+taxAssets
 
-Common Stock
+otherNonCurrentAssets
 
-Total Liabilities Net Minority Interest
+totalNonCurrentAssets
 
-Total Non Current Liabilities Net Minority Interest
+otherAssets
 
-Other Non Current Liabilities
+totalAssets
 
-Non Current Deferred Liabilities
+accountPayables
 
-Non Current Deferred Taxes Liabilities
+shortTermDebt
 
-Long Term Debt And Capital Lease Obligation
+taxPayables
 
-Long Term Debt
+deferredRevenue
 
-Current Liabilities
+otherCurrentLiabilities
 
-Current Debt And Capital Lease Obligation
+totalCurrentLiabilities
 
-Payables And Accrued Expenses
+longTermDebt
 
-Payables
+deferredRevenueNonCurrent
 
-Accounts Payable
+deferredTaxLiabilitiesNonCurrent
 
-Total Assets
+otherNonCurrentLiabilities
 
-Total Non Current Assets
+totalNonCurrentLiabilities
 
-Other Non Current Assets
+otherLiabilities
 
-Net PPE
+capitalLeaseObligations
 
-Current Assets
+totalLiabilities
 
-Inventory
+preferredStock
 
-Receivables
+commonStock
 
-Accounts Receivable
+retainedEarnings
 
-Cash Cash Equivalents And Short Term Investments
+accumulatedOtherComprehensiveIncomeLoss
 
-Cash And Cash Equivalents
+othertotalStockholdersEquity
 
-Stock Price
+totalStockholdersEquity
 
-Stock Ticker
+totalEquity
+
+totalLiabilitiesAndStockholdersEquity
+
+minorityInterest
+
+totalLiabilitiesAndTotalEquity
+
+totalInvestments
+
+totalDebt
+
+netDebt
+
+ClosingStockPrice
 
 ### Results
 
@@ -95,5 +109,13 @@ In summarizing the project, we encountered challenges in constructing a robust r
 In conclusion, it appears that balance sheets may not be a reliable predictor for the closing stock prices of Canadian oil and gas companies. This is likely due to the influence of extraneous factors beyond the numerical values presented in financial statements that significantly impact the closing stock prices.
 
 ### References
+
+Bank of Canada (2024), Daily Exchange rates, https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/
+
+Bank of Canada (2022), Daily Exchange rates: Lookup tool, https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates-lookup/?lookupPage=lookup_daily_exchange_rates_2017.php&startRange=2017-01-01&series%5B%5D=FXUSDCAD&lookupPage=lookup_daily_exchange_rates_2017.php&startRange=2017-01-01&rangeType=range&rangeValue=&dFrom=2022-12-29&dTo=2023-01-01&submit_button=Submit
+
+Caplinger, D. (2023). The basics of value investing strategy. The Motley Fool. https://www.fool.com/investing/stock-market/types-of-stocks/value-stocks/value-investing-guide/#:~:text=Value%20investing%20is%20an%20investment,and%20earnings%20from%20their%20businesses. 
+
+Financial Modelling Prep (2024), Free stock market API and financial statements API, https://site.financialmodelingprep.com/developer/docs
 
 Yfinance. PyPI. (2023). https://pypi.org/project/yfinance/
